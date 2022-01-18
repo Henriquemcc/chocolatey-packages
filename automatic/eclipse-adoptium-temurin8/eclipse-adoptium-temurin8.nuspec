@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>eclipse-adoptium-temurin8</id>
+    <version>312.7.0.20211226</version>
+    <title>Eclipse Adoptium Temurin 8</title>
+    <authors>Eclipse Foundation</authors>
+    <projectUrl>https://adoptium.net/</projectUrl>
+    <iconUrl>https://adoptium.net/dist/assets/adoptium_logo.svg</iconUrl>
+    <licenseUrl>https://adoptium.net/about.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <bugTrackerUrl>https://github.com/adoptium/adoptium-support/issues</bugTrackerUrl>
+    <tags>adopt open jdk openjdk 8 hotspot java development kit</tags>
+    <description><![CDATA[Java™ is the world's leading programming language and platform.
+
+The Adoptium Working Group promotes and supports high-quality, TCK certified runtimes and associated technology for use across the Java™ ecosystem.
+
+[Eclipse Temurin](https://adoptium.net/faq.html?variant=openjdk8#temurinName) is the name of the OpenJDK distribution from Adoptium.
+
+## Package parameters
+
+- `/NoFeatureEnvironment` - Do not add Eclipse Adoptium Temurin 8 to system PATH.
+
+- `/NoFeatureJarFileRunWith` - Do not associate .jar files to run with Eclipse Adoptium Temurin 8.
+
+- `/FeatureJavaHome` - Set JAVA_HOME environment variable.
+
+- `/FeatureOracleJavaSoft` - Overwrites the reg keys "HKLM\Software\...\javapath" does not work. You need to reinstall it to recreate these registry keys.
+
+Example: `choco install eclipse-adoptium-temurin8 --params "/FeatureJavaHome"`
+]]></description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
