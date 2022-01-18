@@ -1,0 +1,31 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+1. Downloading the MSI file from the FOSSHUB
+
+On a browser, type on the address bar the following link address: "https://www.fosshub.com/Evince.html?dwl=evince-2.32.0.145.msi".
+
+It will automatically download a file called evince-2.32.0.145.msi.
+
+2. Getting package
+
+Download this Chocolatey package.
+
+3. Extracting package
+
+Using a compression/decompression program, such as 7zip, extract this package.
+
+4. Comparing the file contents
+
+To compare the two files contents, on PowerShell type the following commands:
+
+```
+$file1 = "<Complete path to downloaded MSI file from FOSSHUB>"
+
+$file2 = "<Complete path to the MSI file from the extracted Chocolatey package>"
+
+Compare-Object (Get-Content $file1) (Get-Content $file2)
+```
+
+On this command, replace the tags <Complete path to downloaded MSI file from FOSSHUB> and <Complete path to the MSI file from the extracted Chocolatey package> to what it says.
