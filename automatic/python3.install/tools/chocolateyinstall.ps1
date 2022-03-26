@@ -9,10 +9,10 @@ $silentArgs = "/quiet $(Get-InstallComponents $pp)"
 # Getting software name
 $softwareName = "Python $($env:ChocolateyPackageVersion)"
 if (Get-OSArchitectureWidth -eq 64) {
-  $softwareName += "(64-bit)"
+  $softwareName += " (64-bit)"
 }
 elseif (Get-OSArchitectureWidth -eq 32) {
-  $softwareName += "(32-bit)"
+  $softwareName += " (32-bit)"
 }
 
 
