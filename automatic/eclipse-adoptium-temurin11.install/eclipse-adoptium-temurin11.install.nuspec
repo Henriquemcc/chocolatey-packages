@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>eclipse-adoptium-temurin11</id>
+    <id>eclipse-adoptium-temurin11.install</id>
     <version>11.0.13.8</version>
-    <title>Eclipse Adoptium Temurin 11</title>
+    <title>Eclipse Adoptium Temurin 11 (Install)</title>
     <authors>Eclipse Foundation</authors>
     <projectUrl>https://adoptium.net/</projectUrl>
     <iconUrl>https://adoptium.net/dist/assets/adoptium_logo.svg</iconUrl>
